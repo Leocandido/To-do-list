@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400&family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Lista de tarefas</title>
+    <script src="/js/app.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <img class="header__img" src="/assets/images/toDoList.png">
+        <h2>To do list</h2>
+        <div class="header__div">
+            <input type="text" id="Input" class="header__div__input" onkeypress="enter(event)" placeholder="Write here your task">
+            <button onclick="newTask()" class="header__div__button">Add</button>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <ul class="lista">
+            </ul>
+        </section>
+    </main>
+
+</body>
+
+</html>

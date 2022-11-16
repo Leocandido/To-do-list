@@ -1,0 +1,168 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background: rgb(48,63,255);
+    background: linear-gradient(0deg, rgba(48,63,255,1) 0%, rgba(135,206,250,1) 100%);
+    padding: 30px 40px;
+    text-align: center;
+}
+
+.header__img {
+    height: auto;
+    align-self: center;
+    width: 100px;
+}
+
+.header__div {
+    display: flex;
+    justify-content: center;
+}
+
+.header__div__input {
+    margin: 0;
+    border: none;
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0px 0px 5px 0px black;
+}
+
+.header__div__button {
+    padding: 10px;
+    margin-left: 10px;
+    width: 15%;
+    color: white;
+    border: none;
+    background: rgb(48,63,255);
+    background: linear-gradient(0deg, rgba(48,63,255,1) 0%, rgba(135,206,250,1) 100%);
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 0px black;
+}
+
+.header__div__button:hover {
+    background: rgb(153,153,153);
+    background: linear-gradient(0deg, rgba(153,153,153,1) 0%, rgba(220,220,220,1) 100%);
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+}
+
+.lista__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    width: 50%;
+    margin-bottom: 15px;
+    padding: 12px 20px;
+    list-style-type: none;
+    font-size: 18px;
+    background: rgb(48,63,255);
+    background: linear-gradient(0deg, rgba(48,63,255,1) 0%, rgba(135,206,250,1) 100%);
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 0px black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.lista__item--feita {
+    background: rgb(153,153,153);
+    background: linear-gradient(0deg, rgba(153,153,153,1) 0%, rgba(220,220,220,1) 100%);
+    color: white;
+    text-decoration: line-through;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    width: 50%;
+    margin-bottom: 15px;
+    padding: 12px 20px;
+    list-style-type: none;
+    font-size: 18px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 0px black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.lista__item:hover {
+    background: rgb(76,247,75);
+    background: linear-gradient(0deg, rgba(76,247,75,1) 0%, rgba(220,220,220,1) 100%);
+    color: green;
+}
+
+.lista__item--feita:hover{
+    background: rgb(247,75,75);
+    background: linear-gradient(0deg, rgba(247,75,75,1) 0%, rgba(220,220,220,1) 100%);
+    color: red;
+}
+
+.lista__item__button {
+    background: rgb(153,153,153);
+    background: linear-gradient(0deg, rgba(153,153,153,1) 0%, rgba(220,220,220,1) 100%);
+    padding: 5px 10px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0px 0px 5px 0px black;
+}
+
+.lista__item__button:hover {
+    background: rgb(247,75,75);
+    background: linear-gradient(0deg, rgba(247,75,75,1) 0%, rgba(220,220,220,1) 100%);
+    color: red;
+}
+
+@media only screen and (max-width: 765px){
+    .header__div__button, .header__div__input, .lista__item__button {
+        font-size: 12px;
+    }
+    .lista__item, .lista__item--feita {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 550px){
+    .lista__item, .lista__item--feita {
+        font-size: 12px;
+    }
+    .header__div__button, .header__div__input, .lista__item__button {
+        font-size: 10px;
+    }
+    .header {
+        padding: 20px 0px;
+    }
+}
+@media only screen and (max-width: 430px){
+    .lista__item, .lista__item--feita {
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 330px){
+    .header__div__input{
+        width: 45%;
+    }
+    .header__div__button{
+        width: 20%;
+    }
+}
